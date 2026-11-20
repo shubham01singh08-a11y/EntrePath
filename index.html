@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EntrePath — learn entrepreneurship by playing your own venture</title>
+<meta name="description" content="EntrePath is a free, self-paced entrepreneurship trainer. Answer six questions, get a path built for your stage and resources, then learn through short modules, real calculators and a cash-crunch simulation.">
+<meta name="theme-color" content="#0b1020">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2322d3a6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M20 44V20h20v6H27v4h11v6H27v4h13v4z' fill='%230b1020'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="#/dashboard" aria-label="EntrePath home">
+    <span class="mark" aria-hidden="true">EP</span>
+    <span class="brand-text">EntrePath<small>Learn by playing your venture</small></span>
+  </a>
+  <nav id="nav" aria-label="Main">
+    <a href="#/dashboard" data-nav="dashboard">Dashboard</a>
+    <a href="#/path" data-nav="path">Path</a>
+    <a href="#/tools" data-nav="tools">Tools</a>
+    <a href="#/library" data-nav="library">Library</a>
+    <a href="#/community" data-nav="community">Community</a>
+  </nav>
+  <div class="hud" id="hud" aria-live="polite"></div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="footer">
+  <p><strong>EntrePath</strong> is an educational prototype. It gives general business education, not legal, tax, accounting or investment advice. Rules and costs vary by jurisdiction — confirm anything that matters with a local professional.</p>
+  <p class="muted">Progress is stored in this browser only. No account, no tracking, no server.</p>
+</footer>
+
+<div id="toasts" class="toasts" aria-live="polite" aria-atomic="false"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
